@@ -1,3 +1,28 @@
+1.Backup kali's sources.list
+
+mv /etc/apt/sources.list /etc/apt/sources.list.bak
+
+2.Remove updates
+
+find /var/lib/apt/lists -type f -exec rm {} \;
+
+3.Change sources.list content
+
+sudo nano /etc/apt/sources.list
+Paste content given below
+deb http://archive.ubuntu.com/ubuntu/ focal main restricted universe multiverse
+deb-src http://archive.ubuntu.com/ubuntu/ focal main restricted universe multiverse
+deb http://archive.ubuntu.com/ubuntu/ focal-updates main restricted universe multiverse
+deb-src http://archive.ubuntu.com/ubuntu/ focal-updates main restricted universe multiverse
+deb http://archive.ubuntu.com/ubuntu/ focal-security main restricted universe multiverse
+deb-src http://archive.ubuntu.com/ubuntu/ focal-security main restricted universe multiverse
+deb http://archive.ubuntu.com/ubuntu/ focal-backports main restricted universe multiverse
+deb-src http://archive.ubuntu.com/ubuntu/ focal-backports main restricted universe multiverse
+deb http://archive.canonical.com/ubuntu focal partner
+deb-src http://archive.canonical.com/ubuntu focal partner
+
+If you are using kali as a virtual machine then paste this instead
+As core Ubuntu repositories do not have the ARM repositories in them
 deb [arch=arm64] http://ports.ubuntu.com/ubuntu-ports focal main restricted universe multiverse
 deb [arch=arm64] http://ports.ubuntu.com/ubuntu-ports focal-updates main restricted universe multiverse
 deb [arch=arm64] http://ports.ubuntu.com/ubuntu-ports focal-security main restricted universe multiverse

@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Read the CSV file
-csv_path = "/home/harshit/Desktop/scanning_results.csv"
+csv_path = "./scanning_results.csv"
 df = pd.read_csv(csv_path)
 
 # Extract vulnerability columns

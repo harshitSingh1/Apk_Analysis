@@ -3,13 +3,13 @@ import csv
 import subprocess
 
 # Path to MAVS script
-mavs_script = "/home/harshit/Desktop/mavs-master/mavs.sh"
+mavs_script = "./mavs-master/mavs.sh"
 
 # Path to APK files folder
-apk_folder = "/home/harshit/Desktop/Apk_files"
+apk_folder = "./Apk_files"
 
 # Output CSV file path
-output_csv = "/home/harshit/Desktop/scanning_results.csv"
+output_csv = "./scanning_results.csv"
 
 # Header for the CSV file
 csv_header = ["file name", "Hostname Verified", "auth in protected space",

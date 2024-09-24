@@ -5,12 +5,13 @@ This code is primarily designed to run on Linux. MAVS-master is not compatible w
 1. cd path/to/Desktop
 2. git clone https://github.com/harshitSingh1/Apk_Analysis.git
 3. [extract All the files from zip]
-4. Scanning APKs:
+4. cd Apk_Analysis
+5. Scanning APKs:
    a) chmod 777 scan_apks.py
-   b) python scan_apks.py
-5. Analyzing Results:
+   b) python3 scan_apks.py
+6. Analyzing Results:
    a) chmod 777 graph.py
-   b) python graph.py
+   b) python3 graph.py
 ## Folder Structure:
 1. Apk_files: Contains APK files to be scanned.
 2. mavs_master: MAVS tool for scanning APK files.
